@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpaceLearn • Offline Space Explorer</title>
+  <meta name="theme-color" content="#080C18" />
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="icons/icon-192.png" alt="SpaceLearn Logo">
+      <h1>SpaceLearn</h1>
+    </div>
+    <button id="installBtn" class="btn hidden">Install</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Learn the cosmos. Offline.</h2>
+      <p>Explore planets, stars, galaxies, missions, and test yourself with quizzes — works without internet once installed.</p>
+      <div class="grid stats">
+        <div><span id="topicCount">0</span><label>Topics</label></div>
+        <div><span id="quizCount">0</span><label>Quiz Qs</label></div>
+        <div><span id="glossaryCount">0</span><label>Glossary</label></div>
+      </div>
+    </section>
+
+    <nav class="tabs">
+      <button data-tab="topics" class="active">Topics</button>
+      <button data-tab="quiz">Quiz</button>
+      <button data-tab="glossary">Glossary</button>
+      <button data-tab="about">About</button>
+    </nav>
+
+    <section id="topics" class="tab active"></section>
+    <section id="quiz" class="tab"></section>
+    <section id="glossary" class="tab"></section>
+    <section id="about" class="tab">
+      <h3>About SpaceLearn</h3>
+      <p><strong>SpaceLearn</strong> is a lightweight Progressive Web App (PWA) made to teach space science in a clean, fun way. After opening once, it works offline.</p>
+      <ul>
+        <li>Install with the <em>Install</em> button in the header.</li>
+        <li>Switch tabs to explore content.</li>
+        <li>Everything is stored locally on your device.</li>
+      </ul>
+      <p>Built with vanilla HTML/CSS/JS for maximum compatibility.</p>
+    </section>
+  </main>
+
+  <footer>
+    <small>© SpaceLearn — Educational content only. Images are simple drawings generated for this app.</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
